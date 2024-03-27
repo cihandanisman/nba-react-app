@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+    .legends{
+        font-size: 3.5rem;
+        font-weight: 600;
+        margin-top: 10px;  
+        // text-wrap: nowrap;
+        
+    }
+    
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    .input-inside {
+        width: 85%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        &:focus {
+            outline: none;
+        }
+    }
+
+}

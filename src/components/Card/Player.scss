@@ -1,0 +1,59 @@
+@import "../../sass/reset";
+
+.player-body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://www.logodesignlove.com/images/classic/nba-logo.jpg);
+  max-width: 85%;
+  margin: 10px auto;
+  border-radius: 1rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .player-card {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    .player-image {
+      padding: 3rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: white;
+      border-radius: 5px;
+      width: 250px;
+      .image {
+        background-color: white;
+        border-radius: 5px;
+        width: 250px;
+
+        img {
+          object-fit: cover;
+          height: 250px;
+          width: 200px;
+
+          transition: all 0.3s;
+
+          &:hover {
+            scale: 0.95;
+            cursor: pointer;
+          }
+        }
+        p {
+          text-align: center;
+          font-size: 1.1rem;
+          font-weight: 500;
+          margin-top: 10px;
+        }
+      }
+      .statistics {
+        height: 250px;
+        p {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
